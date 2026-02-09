@@ -1,30 +1,18 @@
 # Dockerized Flask Application
 
-A simple Python Flask web application containerized using Docker.
+A simple Python Flask web application containerized using Docker, built to demonstrate containerization and consistent application runtime across environments.
+
+## Tech Stack
+- Python (Flask)
+- Docker
+- Linux (Ubuntu)
 
 ## Features
-- Python Flask web app
+- Flask-based web application
 - Dockerized using a slim Python base image
-- Environment variable support (APP_ENV)
+- Environment variable support
 - Runs consistently across environments
 
-## Run locally with Docker
-
+## Run Locally (Without Docker)
 ```bash
-docker build -t devops-python-app .
-docker run -p 5000:5000 -e APP_ENV=production devops-python-app# Dockerized Flask Application
-
-A simple Python Flask web application containerized using Docker.
-
-## Features
-- Python Flask web app
-- Dockerized using a slim Python base image
-- Environment variable support (APP_ENV)
-- Runs consistently across environments
-
-## Run locally with Docker
-```bash
-docker build -t devops-python-app .
-docker run -p 5000:5000 -e APP_ENV=production devops-python-app
-
-
+python3 app/app.py
